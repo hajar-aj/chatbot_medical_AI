@@ -1,0 +1,158 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["Bonjour", "Salut", "Coucou"],
+            "responses": ["Bonjour! Comment puis-je vous aider aujourd'hui?"]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["Au revoir", "À bientôt", "Ciao"],
+            "responses": ["Au revoir! N'hésitez pas à revenir si vous avez d'autres questions."]
+        },
+        {
+            "tag": "thanks",
+            "patterns": ["Merci", "Merci beaucoup"],
+            "responses": ["De rien ! Je suis là pour vous aider."]
+        },
+        {
+            "tag": "symptoms",
+            "patterns": ["J'ai des symptômes", "Je me sens mal", "Je ne me sens pas bien"],
+            "responses": ["Pouvez-vous me décrire quels sont vos symptômes ?"],
+            "context": "symptoms"
+        },
+        {
+            "tag": "headache",
+            "patterns": ["J'ai mal à la tête", "J'ai un mal de tête", "Ma tête me fait mal"],
+            "responses": ["Je suis désolé d'apprendre que vous avez mal à la tête. Avez-vous d'autres symptômes?"],
+            "context": "headache"
+        },
+        {
+            "tag": "fever",
+            "patterns": ["J'ai de la fièvre", "Je me sens chaud", "Je pense que j'ai de la fièvre"],
+            "responses": ["La fièvre peut être un signe d'infection. Avez-vous d'autres symptômes?"],
+            "context": "fever"
+        },
+        {
+            "tag": "cough",
+            "patterns": ["Je tousse", "J'ai une toux", "Je n'arrête pas de tousser"],
+            "responses": ["La toux peut être causée par plusieurs facteurs. Avez-vous d'autres symptômes?"],
+            "context": "cough"
+        },
+        {
+            "tag": "cold",
+            "patterns": ["Je pense que j'ai un rhume", "J'ai le nez qui coule", "J'éternue beaucoup"],
+            "responses": ["Il semble que vous pourriez avoir un rhume. Assurez-vous de vous reposer et de boire beaucoup d'eau. Si vos symptômes s'aggravent, consultez un médecin."],
+            "context": "cold"
+        },
+        {
+            "tag": "flu",
+            "patterns": ["Je pense que j'ai la grippe", "J'ai des frissons", "J'ai des douleurs musculaires"],
+            "responses": ["Il semble que vous pourriez avoir la grippe. Assurez-vous de vous reposer et de boire beaucoup d'eau. Si vos symptômes s'aggravent, consultez un médecin."],
+            "context": "flu"
+        },
+        {
+            "tag": "headache_causes",
+            "patterns": ["Quelles sont les causes des maux de tête?", "Pourquoi ai-je mal à la tête?"],
+            "responses": ["Les maux de tête peuvent être causés par divers facteurs, tels que le stress, la déshydratation, la fatigue ou des problèmes de vision. Si vos maux de tête sont fréquents ou sévères, consultez un médecin."],
+            "context": "headache"
+        },
+        {
+            "tag": "fever_causes",
+            "patterns": ["Quelles sont les causes de la fièvre?", "Pourquoi ai-je de la fièvre?"],
+            "responses": ["La fièvre est généralement causée par une infection, comme un rhume, la grippe ou une infection bactérienne. Si votre fièvre est élevée ou persistante, consultez un médecin."],
+            "context": "fever"
+        },
+        {
+            "tag": "cough_causes",
+            "patterns": ["Quelles sont les causes de la toux?", "Pourquoi est-ce que je tousse?"],
+            "responses": ["La toux peut être causée par des infections virales, des allergies, de l'asthme ou d'autres problèmes respiratoires. Si votre toux est persistante ou s'aggrave, consultez un médecin."],
+            "context": "cough"
+        },
+        {
+            "tag": "sore_throat",
+            "patterns": ["J'ai mal à la gorge", "Ma gorge me fait mal", "J'ai une gorge irritée"],
+            "responses": ["Je suis désolé d'apprendre que vous avez mal à la gorge. Il semble que vous pourriez avoir une infection de la gorge. "],
+            "context": "sore_throat"
+        },
+        {
+            "tag": "stomachache",
+            "patterns": ["J'ai mal au ventre", "J'ai des douleurs abdomina", "Mon estomac me fait mal"],
+            "responses": ["Je suis désolé d'apprendre que vous avez mal au ventre. Il semble que vous pourriez avoir une indigestion ou une gastro-entérite. "],
+            "context": "stomachache"
+          },
+          {
+            "tag": "nausea",
+            "patterns": ["J'ai la nausée", "Je me sens nauséeux", "Je pense que je vais vomir"],
+            "responses": ["Je suis désolé d'apprendre que vous vous sentez nauséeux. Avez-vous d'autres symptômes?"],
+            "context": "nausea"
+          },
+          {
+            "tag": "allergies",
+            "patterns": ["Je pense que j'ai des allergies", "J'ai des démangeaisons", "Mes yeux sont irrités"],
+            "responses": ["Il semble que vous pourriez avoir des allergies. Essayez de prendre un antihistaminique en vente libre et consultez un médecin si vos symptômes s'aggravent."],
+            "context": "allergies"
+          },
+          {
+            "tag": "asthma",
+            "patterns": ["Je pense que j'ai de l'asthme", "J'ai du mal à respirer", "Je ressens une oppression thoracique"],
+            "responses": ["Il semble que vous pourriez avoir de l'asthme. Consultez un médecin pour un diagnostic et un traitement appropriés."],
+            "context": "asthma"
+          },
+          {
+            "tag": "sore_throat_causes",
+            "patterns": ["Quelles sont les causes des maux de gorge?", "Pourquoi ai-je mal à la gorge?"],
+            "responses": ["Les maux de gorge peuvent être causés par des infections virales, des infections bactériennes, des allergies ou l'irritation due à la pollution de l'air. Si votre mal de gorge est persistant ou s'aggrave, consultez un médecin."],
+            "context": "sore_throat"
+          },
+          {
+            "tag": "stomachache_causes",
+            "patterns": ["Quelles sont les causes des maux de ventre?", "Pourquoi ai-je mal au ventre?"],
+            "responses": ["Les maux de ventre peuvent être causés par l'indigestion, les gaz, la constipation, les infections gastro-intestinales ou d'autres problèmes digestifs. Si votre mal de ventre est persistant ou s'aggrave, consultez un médecin."],
+            "context": "stomachache"
+          },
+          {
+            "tag": "nausea_causes",
+            "patterns": ["Quelles sont les causes de la nausée?", "Pourquoi ai-je la nausée?"],
+            "responses": ["La nausée peut être causée par l'indigestion, les infections gastro-intestinales, la grossesse, le mal des transports ou d'autres problèmes de santé. Si votre nausée est persistante ou s'aggrave, consultez un médecin."],
+            "context": "nausea"
+          },
+          {
+            "tag": "covid",
+            "patterns": ["Je pense que j'ai la COVID-19", "J'ai des symptômes de la COVID-19", "Je crois que j'ai le coronavirus"],
+            "responses": ["Si vous pensez avoir la COVID-19, il est important de vous isoler et de contacter un professionnel de la santé pour obtenir des conseils. Avez-vous d'autres symptômes?"],
+            "context": "covid"
+          },
+          {
+            "tag": "diabetes",
+            "patterns": ["Je pense que j'ai le diab\\ète", "J'ai des symptômes de diabète", "Je crois que je suis diabétique"],
+            "responses": ["Si vous pensez avoir le diabète, il est important de consulter un médecin pour un diagnostic et un traitement appropriés. Avez-vous d'autres symptômes?"],
+            "context": "diabetes"
+          },
+          {
+            "tag": "hypertension",
+            "patterns": ["Je pense que j'ai de l'hypertension", "J'ai des symptômes d'hypertension", "Je crois que j'ai une tension artérielle élevée"],
+            "responses": ["Si vous pensez avoir de l'hypertension, il est important de consulter un médecin pour un diagnostic et un traitement appropriés. Avez-vous d'autres symptômes?"],
+            "context": "hypertension"
+          },
+          {
+            "tag": "covid_symptoms",
+            "patterns": ["Quels sont les symptômes de la COVID-19?", "Comment savoir si j'ai la COVID-19?", "Quels sont les signes du coronavirus?"],
+            "responses": ["Les symptômes de la COVID-19 peuvent inclure de la fièvre, une toux sèche, de la fatigue, des douleurs musculaires, des maux de tête, une perte de goût ou d'odorat, et des difficultés respiratoires. Si vous présentez ces symptômes, contactez un professionnel de la santé."],
+            "context": "covid"
+          },
+          {
+            "tag": "diabetes_symptoms",
+            "patterns": ["Quels sont les symptômes du diabète?", "Comment savoir si j'ai le diabète?", "Quels sont les signes du diabète?"],
+            "responses": ["Les symptômes du diabète peuvent inclure une soif excessive, une faim accrue, une miction fréquente, une fatigue inhabituelle, une perte de poids inexpliquée, des plaies qui mettent du temps à guérir et des problèmes de vision. Si vous présentez ces symptômes, consultez un médecin."],
+            "context": "diabetes"
+          },
+          {
+            "tag": "hypertension_symptoms",
+            "patterns": ["Quels sont les symptômes de l'hypertension?", "Comment savoir si j'ai de l'hypertension?", "Quels sont les signes de la tension artérielle élevée?"],
+            "responses": ["L'hypertension est souvent asymptomatique, ce qui signifie qu'elle peut ne pas présenter de symptômes évidents. Cependant, certaines personnes peuvent ressentir des maux de tête, des vertiges, des bourdonnements d'oreille ou des saignements de nez. Consultez un médecin pour vérifier votre tension artérielle."],
+            "context": "hypertension"
+          }
+    ]
+  }
+  
